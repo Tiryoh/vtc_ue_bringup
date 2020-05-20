@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="ip" default="127.0.0.1" />
+  <arg name="rvizconfig" value="$(find vtc_ue_bringup)/config/vtc_ue.rviz" />
+  <node name="cage_ros_bridge" pkg="cage_ros_bridge" type="cage_ros_bridge"
+    args="-d $(arg ip)" required="true" />
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)"/>
+  <node name="rostopic" pkg="rostopic" type="rostopic" args="pub -1 /cmd_vel geometry_msgs/Twist -- '[0.0, 0.0, 0.0]' '[0.0, 0.0, 0.0]'"/>
+  <include file="$(find timed_roslaunch)/launch/timed_roslaunch.launch">
+    <arg name="time" value="3" />
+    <arg name="pkg" value="velodyne_pointcloud" />
+    <arg name="file" value="VLP16_points.launch" />
+    <arg name="value" value="device_ip:=$(arg ip) frame_id:=base_link" />
+  </include>
+</launch>
