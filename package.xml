@@ -14,7 +14,6 @@
   <buildtool_depend>catkin</buildtool_depend>
   <exec_depend>cage_ros_bridge</exec_depend>
   <exec_depend>rviz</exec_depend>
-  <exec_depend>timed_roslaunch</exec_depend>
 
   <export>
 
