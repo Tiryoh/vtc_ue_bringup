@@ -6,14 +6,25 @@
 
 YouTube: https://youtu.be/R8G5LW7Up14
 
+## 目次
+
+* [初期設定](#初期設定)
+* [使い方](#使い方)
+* [ライセンス](#ライセンス)
+
 ## 初期設定
 
 Unreal Engineが動くPCとROSが動くPCが必要です。
 
 ### 1. VTCシミュレータのセットアップ
 
-[furo-org/VTC](https://github.com/furo-org/VTC)をUnreal Engineが動くPCにセットアップします。Windows 10のバージョン1909とバージョン2004で動作確認をしました。  
-[パッケージ済みバイナリが公開されています](https://github.com/furo-org/VTC#%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E6%B8%88%E3%81%BF%E3%83%90%E3%82%A4%E3%83%8A%E3%83%AA%E3%81%AE%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89)のでそれを使用すると楽です。
+[furo-org/VTC](https://github.com/furo-org/VTC)をUnreal Engineが動くPCにセットアップします。
+[パッケージ済みバイナリが公開されています](https://github.com/furo-org/VTC#%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E6%B8%88%E3%81%BF%E3%83%90%E3%82%A4%E3%83%8A%E3%83%AA%E3%81%AE%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89)のでそれを使用すると楽です。  
+Windows 10 Pro 64bitのバージョン1909とバージョン2004で以下のUnreal Engine版のVTCの動作確認をしました。
+
+* VTC2018
+* VTC2019
+* VTC 2020/5/28版
 
 ファイアウォールの設定をしてシミュレータの外部との通信を許可しておきます。
 
@@ -41,7 +52,7 @@ cd ~/catkin_ws
 catkin init
 ```
 
-#### 2.2. cage_ros_bridge
+#### 2.2. cage_ros_bridgeのセットアップ
 
 [furo-org/CageClient](https://github.com/furo-org/CageClient)をROSのワークスペース以下にダウンロードしてからビルドします。
 
