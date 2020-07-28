@@ -2,6 +2,8 @@
 
 [furo-org/VTC](https://github.com/furo-org/VTC)を使うためのROSパッケージです。
 
+__[furo-org/cage_ros_stack](https://github.com/furo-org/cage_ros_stack)に移行しました。今後このリポジトリはメンテナンスされません。__
+
 [![Image from Gyazo](https://i.gyazo.com/9e35a7e171cbf2c0c9ccc82c08364fb6.png)](https://youtu.be/R8G5LW7Up14)
 
 YouTube: https://youtu.be/R8G5LW7Up14
